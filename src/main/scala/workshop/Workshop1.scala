@@ -19,8 +19,13 @@ object Workshop1 extends IWorkshop:
   /**
    * Exercise 2
    */
-  def exercise2(n: Int): Int = ???
-
+  def exercise2(n: Int): Int = factorial(n)
+  
+  def factorial(number: Int): Int = if(number==1 || number==0) 1 else factorialRecursive(number, number, 1)
+  
+  def factorialRecursive(number: Int, result: Int, cont: Int): Int = 
+    if(cont==number) result else factorialRecursive(number, result*cont, cont+1)
+  
   /**
    * Exercise 3
    */
