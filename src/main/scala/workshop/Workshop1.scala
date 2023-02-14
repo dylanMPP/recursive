@@ -9,15 +9,17 @@ object Workshop1 extends IWorkshop:
   /**
    * Exercise 1
    */
+  def exercise1(x: Int,n:Int): Int = pow(x,n)
 
-  def exercise1(x: Int,n:Int): Int = ???
+  def pow(base: Int, exp: Int): Int = if (exp == 0) 1 else powRecursive(base, exp, 1, base)
+
+  def powRecursive(base: Int, exp: Int, cont: Int, result: Int): Int =
+    if (cont == exp) result else powRecursive(base, exp, cont + 1, result * base)
 
   /**
    * Exercise 2
    */
-
   def exercise2(n: Int): Int = ???
-
 
   /**
    * Exercise 3

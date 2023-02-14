@@ -1,7 +1,5 @@
 package workshop
 
-
-
 class Workshop1Test extends munit.FunSuite:
   import Workshop1.*
 
@@ -11,8 +9,6 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise1(2, 3) == 8)
     assert(exercise1(2, 0) == 1)
     assert(exercise1(2, 1) == 2)
-    
-    
   }
   
   // ------ exercise 2 tests ------------------------------------------------------
@@ -21,7 +17,6 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise2(5)==120)
     assert(exercise2(10)==3628800)
     assert(exercise2(7)==5040)
-    
   }
 
   // ------ exercise 3 tests ------------------------------------------------------
