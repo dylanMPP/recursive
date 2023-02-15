@@ -21,30 +21,30 @@ object Workshop1 extends IWorkshop:
    */
   def exercise2(n: Int): Int = factorial(n)
 
-  def factorial(number: Int): Int = if(number==1 || number==0) 1 else number*factorial(pred(number))
+  def factorial(number: Int): Int = if(number==0) 1 else number*factorial(pred(number))
 
   /**
    * Exercise 3
    */
-  def exercise3(n: Int): Int = sum(n)
+  def exercise3(n: Int): Int = summation(n)
 
-  def sum(number: Int): Int = if (number==0) number else number+(sum(pred(number)))
+  def summation(number: Int): Int = if (number==0) number else number+(summation(pred(number)))
 
   /**
    * Exercise 4
    */
-
-  def exercise4(x:Int,y:Int): Int = ???
-
+  def exercise4(x:Int,y:Int): Int = sum(x,y)
+  
+  def sum(number:Int, number2: Int): Int = if (number==0) number2 else suc(sum(pred(number), number2))
+  
   /**
    * Exercise 5
    */
-
   def exercise5(x:Int,y:Int): Int = ???
+  
   /**
    * Exercise 6
    */
-
   def exercise6(x:Int,y:Int): Int = ???
   
 
