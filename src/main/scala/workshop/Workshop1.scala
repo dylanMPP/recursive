@@ -26,7 +26,9 @@ object Workshop1 extends IWorkshop:
   /**
    * Exercise 3
    */
-  def exercise3(n: Int): Int = ???
+  def exercise3(n: Int): Int = sum(n)
+
+  def sum(number: Int): Int = if (number==0) number else number+(sum(pred(number)))
 
   /**
    * Exercise 4
