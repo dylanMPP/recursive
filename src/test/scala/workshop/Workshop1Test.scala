@@ -45,7 +45,6 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise5(5,5)==0)
     assert(exercise5(6,6)==0)
     assert(exercise5(10,1)==9)
-    
   }
 
   // ------ exercise 6 tests ------------------------------------------------------
