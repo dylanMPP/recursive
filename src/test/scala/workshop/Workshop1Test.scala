@@ -54,8 +54,6 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise6(5,5)==25)
     assert(exercise6(6,6)==36)
     assert(exercise6(7,7)==49)
-
-    
   }
 
   // ------ exercise 7 tests ------------------------------------------------------
@@ -65,8 +63,6 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise7(5,5)==1)
     assert(exercise7(6,6)==1)
     assert(exercise7(10,1)==10)
-
-    
   }
 
   // ------ exercise 8 tests ------------------------------------------------------
@@ -75,10 +71,7 @@ class Workshop1Test extends munit.FunSuite:
     assert(exercise8(20,7)==6)
     assert(exercise8(20,5)==0)
     assert(exercise8(6,4)==2)
-    
   }
-
-
 
   import scala.concurrent.duration.*
   override val munitTimeout = 10.seconds

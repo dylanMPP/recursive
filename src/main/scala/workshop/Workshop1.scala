@@ -43,15 +43,18 @@ object Workshop1 extends IWorkshop:
   def exercise5(x:Int,y:Int): Int = dif(x,y)
 
   // lo que hago es ir disminuyendo cada número, cuando el número que está restando
-  // da 0, paro y devuelvo el número que fue restado.
-  def dif(number:Int, number2:Int): Int =
-    if (number2==0) number else dif(pred(number), pred(number2))
+  // da 0, paro y me voy devolviendo con recursividad.
+  def dif(number:Int, number2:Int): Int = if (number2==0) number else dif(pred(number), pred(number2))
 
   /**
    * Exercise 6
    */
-  def exercise6(x:Int,y:Int): Int = ???
+  def exercise6(x:Int,y:Int): Int = prod(x, y)
   
+  def prod(times:Int, number:Int): Int =
+    if(times==0)
+      0
+    else sum(number, prod(pred(times), number))
 
   /**
    * Exercise 7
