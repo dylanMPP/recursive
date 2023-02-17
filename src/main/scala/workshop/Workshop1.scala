@@ -59,13 +59,15 @@ object Workshop1 extends IWorkshop:
   /**
    * Exercise 7
    */
-  def exercise7(x:Int,y:Int): Int = ???
+  def exercise7(x:Int,y:Int): Int = div(x,y)
+
+  def div(dividendo:Int, divisor:Int): Int = if(dividendo==0) 0 else 1+div(dif(dividendo,divisor), divisor)
 
   /**
    * Exercise 8
    */
   def exercise8(m:Int,n:Int): Int = mod(m, n)
-  
+
   def mod(number:Int, divisor:Int):Int = if(number<divisor) number else mod(dif(number,divisor),divisor)
 
 
